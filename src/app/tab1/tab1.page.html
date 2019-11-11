@@ -1,0 +1,120 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    
+    
+<ngx-datatable [rows]="mydata"
+
+[rowHeight]="'auto'"
+[headerHeight]="50"
+[columnMode]="force"
+>
+<ngx-datatable-column name="Name"></ngx-datatable-column>
+<ngx-datatable-column name="description"></ngx-datatable-column>
+<ngx-datatable-column name="cost $"></ngx-datatable-column>
+<ngx-datatable-column name="category"></ngx-datatable-column>
+<ngx-datatable-column name="stock"></ngx-datatable-column>
+<ngx-datatable-column name="barcode"></ngx-datatable-column>
+<ngx-datatable-column name="Actions" sortable="false">
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+        <button ion-button size="small"  color="secondary" 
+        (click)="onEdit(row.id,row.name,row.description,row.cost,row.category,row.stock,row.barcode)">
+          <ion-icon name="create"></ion-icon>
+          Edit
+        </button>
+     
+      
+        <button ion-button size="small"  color="danger"  (click)="onDelete(row.id)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+    </ng-template>
+</ngx-datatable-column>
+
+</ngx-datatable>
+<button ion-button color="secondary"  class="btn btn-primary" (click)="inserPage()">
+    <ion-icon name="create"></ion-icon>
+    Insert
+  </button>
+  <div class="ion-padding">
+      <button ion-button color="secondary" class="btn btn-danger"  (click)="myLogOut()" >Log Out</button>
+    </div>
+    
+  <!-- <div  *ngFor=" let item of mydata">
+ 
+
+
+    <ion-list >
+      
+        <ion-item>
+          
+            <ion-label floating>name :  {{item.name}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>description :  {{item.description}}</ion-label>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>cost : {{item.cost}} $</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>category :  {{item.category}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>stock : {{item.stock}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>barcode:   {{item.barcode}}</ion-label>
+          </ion-item>
+          
+          
+        
+          
+          
+        
+          
+          
+   
+        
+        
+        
+          <button ion-button color="secondary"  
+          (click)="onEdit(item.id,item.name,item.description,item.cost,item.category,item.stock,item.barcode )">
+            <ion-icon name="create"></ion-icon>
+            Edit
+          </button>
+       
+        
+          <button ion-button color="danger"   (click)="onDelete(item.id)">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+          </button>
+        
+    </ion-list>
+    
+  
+  </div>
+  
+  <button ion-button color="secondary"  class="btn btn-primary" (click)="inserPage()">
+    <ion-icon name="create"></ion-icon>
+    Insert
+  </button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

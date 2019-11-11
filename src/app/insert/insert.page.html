@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Insert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>name</ion-label>
+      <ion-input type="text" [(ngModel)]="myInfo.name"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating>description</ion-label>
+      <ion-input type="text" [(ngModel)]="myInfo.description" ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>cost    $</ion-label>
+      <ion-input type="number" [(ngModel)]="myInfo.cost"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>category</ion-label>
+      <ion-input type="text" [(ngModel)]="myInfo.category"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>stock</ion-label>
+      <ion-input type="number" [(ngModel)]="myInfo.stock"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>barcode</ion-label>
+      <ion-input type="text" [(ngModel)]="myInfo.barcode"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+
+  <div class="ion-padding">
+    <button   ion-button color="secondary" class="btn btn-success"  (click)="insertProduit()"   >Ajouter Produit</button>
+  </div>
+
+</ion-content>

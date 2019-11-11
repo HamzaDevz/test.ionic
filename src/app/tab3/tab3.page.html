@@ -1,0 +1,43 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content></ion-content> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+  <ion-list>
+    <div class="form-group">
+    <ion-item >
+      <ion-label floating>Email : </ion-label>
+      <ion-input type="email" class="form-control" placeholder="Enter email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  </div>
+  <div class="form-group">
+    <ion-item>
+      <ion-label floating>Password : </ion-label>
+      <ion-input type="password" class="form-control" placeholder="Enter password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </div>
+  
+  </ion-list>
+
+  <div class="ion-padding">
+    <button ion-button color="secondary" class="btn btn-primary" (click)='myLogIn()' >Log In</button>
+  </div>
+
+
+
+  
+
+</ion-content>
+

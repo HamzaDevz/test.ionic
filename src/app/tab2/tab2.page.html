@@ -1,0 +1,56 @@
+
+<ion-header>
+
+ 
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content class="ion-padding">
+
+
+
+  <ion-list>
+      <div class="form-group">
+    <ion-item>
+      <ion-label floating>name :</ion-label>
+      <ion-input type="text" class="form-control" placeholder="Enter name"[(ngModel)]="name"></ion-input>
+    </ion-item>
+  </div>
+  <div class="form-group">
+    <ion-item>
+      <ion-label floating>Email :</ion-label>
+      <ion-input type="email" class="form-control" [(ngModel)]="email" placeholder="Enter email"></ion-input>
+    </ion-item>
+  </div>
+    <div class="form-group">
+    <ion-item>
+      <ion-label floating>Password :</ion-label>
+      <ion-input type="password" class="form-control" [(ngModel)]="password"placeholder="Enter password"></ion-input>
+    </ion-item>
+  </div>
+    <div class="form-group">
+    <ion-item>
+      <ion-label floating>c_Password :</ion-label>
+      <ion-input type="password" class="form-control" [(ngModel)]="c_password" placeholder="confirm password"></ion-input>
+    </ion-item>
+  </div>
+  </ion-list>
+
+
+  <div class="ion-padding">
+    <button   ion-button color="secondary"  class="btn btn-primary" (click)="myRegister()"   >Register</button>
+  </div>
+
+
+
+
+
+
+
+
+
+</ion-content>
