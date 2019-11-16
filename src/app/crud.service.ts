@@ -18,7 +18,7 @@ export class CrudService {
     public http: HttpClient,
     public navCtrl: NavController, 
      ) {
-    console.log('Hello CrudProvider Provider');
+    
   }
 
 
