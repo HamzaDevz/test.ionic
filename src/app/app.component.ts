@@ -27,7 +27,7 @@ export class AppComponent {
         this.navCtrl.navigateRoot('tabs/tab1');
         
       }
-      this.navCtrl.navigateRoot('tabs/tab3');
+      else{this.navCtrl.navigateRoot('tabs/tab3');}
         
       
     })
